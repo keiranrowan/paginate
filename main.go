@@ -28,15 +28,13 @@ func main() {
 			}
 		}
 	}
-	
-	// TTY buffer
+
 	tty, err := os.Open("/dev/tty")
 	if err != nil {
 		panic("Could not open /dev/tty")
 	}
 	r := bufio.NewReader(tty)
 
-	// STDIN or file buffer
 	if len(files) > 0 {
 		for _, v := range files {
 			fp, err := os.Open(v)
