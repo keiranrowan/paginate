@@ -72,7 +72,7 @@ func process(l int, s *bufio.Scanner, r *bufio.Reader) {
 			
 			wait(r)
 			clear()
-			i = 0
+			i = 1
 		}
 	}
 	output(&buf)
